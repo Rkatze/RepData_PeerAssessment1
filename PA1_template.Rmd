@@ -24,7 +24,8 @@ activity$date <- as.Date(activity$date)
 byday <- aggregate(steps ~ date, activity, sum)
 hist(byday$steps, xlab = "steps", ylab = "frequency", 
      main = "total number of steps per day")
-summary(byday)
+mean(byday$steps)
+median(byday$steps)
 ```
 
 ## What is the average daily activity pattern?
