@@ -170,7 +170,7 @@ byinterval[maxsteps,]</code></pre>
 <pre class="r"><code>NAsum &lt;- sum(is.na(activity))
 paste(&quot;The number of missing values in the dataset is&quot;, NAsum)</code></pre>
 <pre><code>## [1] &quot;The number of missing values in the dataset is 2304&quot;</code></pre>
-<p>Devise a strategy for filling in all of the missing values in the dataset</p>
+<p>Devise a strategy for filling in all of the missing values in the dataset :first to figure out the “NA”, then replace the NA with the mean of steps by intervals</p>
 <pre class="r"><code>fillact &lt;- activity
 NAact &lt;- is.na(fillact$steps)
 mean.interval &lt;- tapply(fillact$steps, fillact$interval, mean, 

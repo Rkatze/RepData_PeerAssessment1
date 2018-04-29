@@ -107,6 +107,7 @@ paste("The number of missing values in the dataset is", NAsum)
 ```
 
 Devise a strategy for filling in all of the missing values in the dataset
+:first to figure out the "NA", then replace the NA with the mean of steps by intervals
 
 ```r
 fillact <- activity
